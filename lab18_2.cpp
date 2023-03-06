@@ -1,9 +1,8 @@
 #include<iostream>
 using namespace std;
-void myString(int *&p,int N){
-	p = new int[N];    
+void myString(char *&p,int N){
+	p = new char[N];    
 	for(int i = 0; i < N;i++) p[i] = 'A'+i;
-	p = 0;
 }
 
 int main(){
